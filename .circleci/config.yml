@@ -44,4 +44,4 @@ workflows:
       - deploy:
           requires:
             - testa
-            - testb
+            - testb　
