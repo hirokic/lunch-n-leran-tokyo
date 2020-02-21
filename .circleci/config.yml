@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.1
+    parallelism: 4
     steps:
       - checkout
       - run: mkdir -p my_workspace
