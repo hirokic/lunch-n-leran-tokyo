@@ -6,9 +6,11 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+      - run: sleep 5
   test:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: echo "A first hello" 
+      - run: echo "A Second hello" 
+      - run: sleep 5
